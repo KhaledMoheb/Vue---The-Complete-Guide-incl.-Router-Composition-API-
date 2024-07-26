@@ -1,4 +1,4 @@
-# 01. Section 2 Basics & Core Concepts - DOM Interaction with Vue
+# 01. Section 2 Basics & Core Concepts - Data Binding
 
 ## Overview
 
