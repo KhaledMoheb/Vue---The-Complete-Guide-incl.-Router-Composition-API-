@@ -1,0 +1,38 @@
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script defer src="./app.js"></script>
+<link rel="stylesheet" href="styles.css">
+
+<div id="exercise">
+  <!-- 1) Start the Effect with the Button. The Effect should alternate the "highlight" or "shrink" class on each new setInterval tick (attach respective class to the div with id "effect" below) -->
+  <div>
+    <button @click="startEffect">Start Effect</button>
+    <div id="effect" :class="effectClass"></div>
+  </div>
+  <!-- 2) Create a couple of CSS classes and attach them via the array syntax -->
+  <div :class="['task2Class1', 'task2Class2']">I got no class :(</div>
+  <!-- 3) Let the user enter a class (create some example classes) and attach it -->
+  <div>
+    <p>Enter class name (task3Class1, task3Class2 or task3Class3)</p>
+    <input type="text" v-model="task3Class">
+    <div :class="task3Class">{{ task3Class }}</div>
+  </div>
+  <!-- 4) Let the user enter a class and enter true/ false for another class (create some example classes) and attach the classes -->
+  <div>
+    <p>Enter class name</p>
+    <input type="text" v-model="task4Class1">
+    <p>Enter (true/false) to enable 2nd class</p>
+    <input type="text" v-model="isTask4Class2EnabledInput">
+    <div :class="task4Classes" >task4Class1: {{ task4Class1 }}, task4Class2Enabled: {{ isTask4Class2Enabled }}</div>
+  </div>
+  <!-- 5) Repeat 3) but now with values for styles (instead of class names). Attach the respective styles.  -->
+  <div>
+    <p>Enter task 5 styles</p>
+    <input type="text" v-model="task5Styles">
+    <div :style="task5Styles" >{{task5Styles}}</div>
+  </div>
+  <!-- 6) Create a simple progress bar with setInterval and style bindings. Start it by hitting the below button. -->
+  <div>
+    <button @click="startTask6Progress">Start Progress</button>
+    <div id="task6Div" :style="task6Style"></div>
+  </div>
+</div>

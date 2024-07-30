@@ -1,0 +1,45 @@
+#effect {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+#task6Div {
+  height: 10px;
+  background-color: green;
+}
+
+.highlight {
+  background-color: red;
+  width: 200px !important;
+}
+
+.shrink {
+  background-color: gray;
+  width: 50px !important;
+}
+
+.task2Class1 {
+  background-color: rgb(0, 255, 98);
+}
+
+.task2Class2 {
+  color: rgb(0, 8, 255);
+}
+
+.task3Class1 {
+  background-color: rgb(51, 0, 255);
+}
+.task3Class2 {
+  background-color: rgb(0, 255, 102);
+}
+.task3Class3 {
+  background-color: rgb(255, 0, 140);
+}
+
+.task4Class1 {
+  color: rgb(51, 0, 255);
+}
+.task4Class2 {
+  background-color: rgb(0, 255, 102);
+}
